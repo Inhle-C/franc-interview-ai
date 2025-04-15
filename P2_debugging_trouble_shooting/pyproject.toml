@@ -17,8 +17,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-[project.dependencies]
-pytest = "^7.3.1"
+dependencies = [
+    "pytest>=7.3.1"
+]
 
 [project.optional-dependencies]
 dev = [

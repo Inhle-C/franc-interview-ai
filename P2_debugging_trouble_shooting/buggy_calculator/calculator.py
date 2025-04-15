@@ -24,7 +24,7 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")
     
     # The bug is here: subtly incorrect for negative numbers
-    if a < 0:
-        return -(-a // b)  # This is incorrect for certain values
+    #if a < 0:
+    #    return -(-a // b)  # This is incorrect for certain values
     
     return a / b  # This is the correct implementation 
