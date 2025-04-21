@@ -26,5 +26,19 @@
     "author": "ththhtt",
     "price": 234.0,
     "in_stock": false
+  },
+  {
+    "id": "fde3258c",
+    "title": "tester",
+    "author": "inhle",
+    "price": 4000.0,
+    "in_stock": false
+  },
+  {
+    "id": "4",
+    "title": "Final test",
+    "author": "me",
+    "price": 5454.0,
+    "in_stock": false
   }
 ]

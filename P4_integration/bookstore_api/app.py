@@ -100,9 +100,13 @@ def add_book():
     if not all(k in data for k in ('title', 'author', 'price')):
         abort(400, description="Missing required fields: title, author, price")
     
+    books = load_books()
+    existing_ids = [int(book["id"]) for book in books if book["id"].isdigit()]
+    new_id = str(max(existing_ids, default=0) + 1)
+
     # Create new book
     new_book = {
-        'id': str(uuid.uuid4())[:8],  # Generate a short unique ID
+        'id': new_id,  # Changed to generate a number ID instead of unique Hex ID
         'title': data['title'],
         'author': data['author'],
         'price': float(data['price']),
